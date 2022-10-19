@@ -53,13 +53,14 @@ h3{
 .bgatt1{
     background-image: url('../imagens/background001.jpg');
         background-attachment: fixed;
+    padding: 0px 500px;
         font-family: var(--fonte3);
         font-size: 3.5vw;
-
 }
 
 
 
 main{
     display: flex;
+    background-size: cover;
 }
