@@ -9,58 +9,85 @@
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
-
-* {
+*{
     margin: 0px;
     padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--fonte1);
     font-size: 1em;
 }
+
 header{
     background-color: black;
-    padding-bottom: 50px;
-    max-width: 100vw;
+    color: white;
+    text-align: center;
 }
-h1{
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
     font-family: var(--fonte2);
-    color:white;
-    font-size: 12rem;
-    text-align: center;
+    font-size: 8em;
 }
-
-h2{
-    font-family: var(--font1);
-    color:white;
-    font-size: 1rem;
-    text-align: center;
-
+header > p{
+    padding-bottom: 50px;
 }
-a{
+header a, footer a{
+    color: white;
     text-decoration: none;
-    color: white;   
+    font-weight: bolder;
 }
-a:hover{ 
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
-       /* BACKGROUND ATTACHMENT*/
 
-
-h3{
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
-    margin: 150px 0px 150px 50px;
+    font-size: 2em;
+    line-height: 2em;
 }
 
-.bgatt1{
-    background-image: url('../imagens/background001.jpg');
-        background-attachment: fixed;
-    padding: 0px 500px;
-        font-family: var(--fonte3);
-        font-size: 3.5vw;
+section.normal{
+    background-color: white;
+    color:black
 }
 
+section.normal > p{
+    padding-bottom: 2em;
+}
 
-
-main{
-    display: flex;
+section.image{
+    color: white;
+    box-shadow: inset 6px 6px 15px 0px rgba(0, 0, 0, 0.705);
     background-size: cover;
+    background-attachment: fixed;
+}
+
+section.image > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+section#img1{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
